@@ -1,0 +1,152 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f1e1;
+    color: #4b3d2e;
+}
+
+header {
+    background-color: #cfae85;
+    padding: 10px 0;
+}
+
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.nav-links a, .auth-links a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+.nav-links a:hover, .auth-links a:hover {
+    text-decoration: underline;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.auth-form {
+    width: 100%;
+    max-width: 400px;
+    margin: 50px auto;
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.auth-form h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.auth-form label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.auth-form input {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.auth-form button {
+    background-color: #cfae85;
+    border: none;
+    color: white;
+    padding: 10px;
+    cursor: pointer;
+    width: 100%;
+}
+
+.auth-form button:hover {
+    background-color: #b18c61;
+}
+
+.forgot-password {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.forgot-password a {
+    color: #4b3d2e;
+    text-decoration: none;
+}
+
+.forgot-password a:hover {
+    text-decoration: underline;
+}
+
+footer {
+    background-color: #cfae85;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Mobile-first responsive adjustments */
+@media (max-width: 600px) {
+    .logo {
+        font-size: 20px; /* Smaller logo size */
+        text-align: center;
+        display: block;
+        margin-bottom: 15px;
+    }
+
+    .nav-container {
+        flex-direction: column;
+        text-align: center;
+        padding: 0 10px;
+    }
+
+    .nav-links a {
+        margin: 10px 0;
+    }
+
+    .auth-form {
+        width: 90%; /* Take up 90% of screen width for smaller devices */
+        padding: 15px;
+    }
+
+    .auth-form input,
+    .auth-form button {
+        font-size: 14px; /* Smaller font size for form elements */
+    }
+
+    .auth-form label {
+        font-size: 14px;
+    }
+
+    footer {
+        font-size: 12px; /* Smaller footer text */
+    }
+
+    .forgot-password a {
+        font-size: 14px;
+    }
+}
+
+/* Further adjustments for very small screens */
+@media (max-width: 375px) {
+    .auth-form {
+        padding: 12px; /* Reduce padding on very small screens */
+    }
+
+    .auth-form input,
+    .auth-form button {
+        padding: 12px;
+    }
+}

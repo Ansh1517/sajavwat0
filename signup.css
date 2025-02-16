@@ -1,0 +1,126 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f1e1; /* Light creamy background */
+    color: #4b3d2e; /* Brown text color */
+}
+
+header {
+    background-color: #cfae85; /* Creamy brown header */
+    padding: 10px 0;
+}
+
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+.nav-links a:hover {
+    text-decoration: underline;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.auth-form {
+    width: 100%;
+    max-width: 400px; /* Max width for larger screens */
+    margin: 50px auto;
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.auth-form h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.auth-form label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.auth-form input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.auth-form button {
+    background-color: #cfae85; /* Creamy brown button */
+    border: none;
+    color: white;
+    padding: 10px;
+    cursor: pointer;
+    width: 100%;
+}
+
+.auth-form button:hover {
+    background-color: #b18c61; /* Darker brown on hover */
+}
+
+footer {
+    background-color: #cfae85; /* Creamy brown footer */
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Media Queries for responsiveness */
+@media (max-width: 768px) {
+    /* Adjust header for smaller screens */
+    .nav-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .logo {
+        margin-bottom: 10px;
+    }
+
+    .nav-links a {
+        margin: 5px 0;
+    }
+
+    /* Adjust the form width for smaller screens */
+    .auth-form {
+        width: 90%; /* Take 90% of the screen width */
+    }
+
+    /* Adjust button and input padding for smaller screens */
+    .auth-form input, .auth-form button {
+        padding: 12px;
+    }
+}
+
+/* Further adjustments for very small screens */
+@media (max-width: 480px) {
+    .logo {
+        font-size: 20px; /* Smaller logo size */
+    }
+
+    .auth-form {
+        padding: 15px; /* Less padding for very small screens */
+    }
+
+    .auth-form input, .auth-form button {
+        font-size: 14px; /* Adjust font size for inputs and buttons */
+    }
+}

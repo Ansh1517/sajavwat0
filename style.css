@@ -1,0 +1,147 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f1e1;
+    color: #4b3d2e;
+}
+
+/* Header Styles */
+header {
+    background-color: #cfae85;
+    padding: 10px 0;
+}
+
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.nav-links a, .auth-links a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+.nav-links a:hover, .auth-links a:hover {
+    text-decoration: underline;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+/* Product Section Styles */
+.product-section {
+    text-align: center;
+    padding: 40px 20px;
+}
+
+.product-section h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+.product-card {
+    display: inline-block;
+    width: 300px;
+    margin: 20px;
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.product-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.product-card h3 {
+    font-size: 24px;
+    margin: 15px 0;
+}
+
+.product-card p {
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.product-card button {
+    background-color: #cfae85;
+    border: none;
+    color: white;
+    padding: 10px;
+    cursor: pointer;
+    width: 100%;
+    margin: 5px 0;
+    font-size: 16px;
+    border-radius: 5px;
+}
+
+.product-card button:hover {
+    background-color: #b18c61;
+}
+
+/* Instagram Link Styles */
+.instagram-link {
+    margin-top: 20px;
+}
+
+.instagram-link a {
+    color: #4b3d2e;
+    font-size: 18px;
+    text-decoration: none;
+}
+
+.instagram-link a:hover {
+    text-decoration: underline;
+}
+
+/* Footer Styles */
+footer {
+    background-color: #cfae85;
+    text-align: center;
+    padding: 10px;
+    margin-top: 30px;
+}
+
+footer p {
+    font-size: 14px;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .nav-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .product-card {
+        width: 45%;
+        margin: 10px;
+    }
+
+    .product-section h2 {
+        font-size: 28px;
+    }
+}
+
+@media (max-width: 480px) {
+    .product-card {
+        width: 90%;
+    }
+
+    .product-section h2 {
+        font-size: 24px;
+    }
+
+    .product-card button {
+        padding: 12px;
+        font-size: 14px;
+    }
+}
